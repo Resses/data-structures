@@ -1,0 +1,44 @@
+#ifndef DEQUE_H
+#define DEQUE_H
+
+#include <iostream>
+
+#define SUB_VECT_CAPACITY 10
+
+typedef int EType;
+
+class Deque
+{
+    /*
+    class DataVector{
+    public:
+        DataVector():size(0){}
+    private:
+        int size;
+        EType arr[SUB_VECT_CAPACITY];
+    };
+     */
+    struct Position{
+        int indexPos, subVectPos;
+        friend std::ostream &operator <<(std::ostream &os, const Position &pos) {
+            os << "[" << pos.indexPos << "] [ " << pos.subVectPos << "]";
+            return os;
+        }
+    };
+    friend std::ostream &operator <<(std::ostream &os, const Deque &deque);
+public:
+    Deque();
+    ~Deque();
+    void insert_front(const EType& element);
+    void insert_back(const EType& element);
+    EType& remove_front();
+    EType& remove_back();
+private:
+    DataVector** arr;
+    int size, capacity;
+    Position front, back;
+    
+    void checkFrontCapacity();
+    void checkBackCapacity();
+};
+#endif
