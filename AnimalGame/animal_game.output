@@ -1,0 +1,93 @@
+Script started on Fri May  8 14:26:09 2015
+[?1034hbash-3.2$ ./a.out 
+*** Warning animal_game.txt not found -- starting with new tree
+Think of an animal... press Enter (<-') when you are ready
+
+Is it a dog (Y/N)?
+y
+YAY I WIN!
+Do you want to play again (Y/N)?
+y
+Think of an animal... press Enter (<-') when you are ready
+
+Is it a dog (Y/N)?
+n
+what animal is it?
+cat
+What Yes/No question could I have asked to identify your animal? 
+does it have whsiker     iskers
+Do you want to play again (Y/N)?
+y
+Think of an animal... press Enter (<-') when you are ready
+
+does it have whiskers (Y/N)?
+n
+Is it a dog (Y/N)?
+n
+what animal is it?
+pig
+What Yes/No question could I have asked to identify your animal? 
+is it pink
+Do you want to play again (Y/N)?
+n
+does it have whiskers
+   is it pink
+      dog
+      pig
+   cat
+bash-3.2$ ./a.out 
+Think of an animal... press Enter (<-') when you are ready
+
+does it have whiskers (Y/N)?
+n
+is it pink (Y/N)?
+y
+Is it a pig (Y/N)?
+n
+what animal is it?
+flamingo
+What Yes/No question could I have asked to identify your animal? 
+does it have wings
+Do you want to play again (Y/N)?
+y
+Think of an animal... press Enter (<-') when you are ready
+
+does it have whiskers (Y/N)?
+y
+Is it a cat (Y/N)?
+y
+YAY I WIN!
+Do you want to play again (Y/N)?
+n
+does it have whiskers
+   is it pink
+      dog
+      does it have wings
+         pig
+         flamingo
+   cat
+bash-3.2$ ./a.out 
+Think of an animal... press Enter (<-') when you are ready
+
+does it have whiskers (Y/N)?
+k
+Invalid response. Please enter y or n
+y
+Is it a cat (Y/N)?
+y
+YAY I WIN!
+Do you want to play again (Y/N)?
+n l
+Invalid response. Please enter y or n
+n
+does it have whiskers
+   is it pink
+      dog
+      does it have wings
+         pig
+         flamingo
+   cat
+bash-3.2$ exit
+exit
+
+Script done on Fri May  8 14:28:31 2015
